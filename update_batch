@@ -1,0 +1,22 @@
+<?php 
+    include 'dbConfig.php';
+    include 'connect.php';
+     error_reporting(0);
+    $course=$_POST['course'];
+    $batch=$_POST['batch_id'];
+    $batch_update=$_POST['batch_update_id'];
+    $query="UPDATE sem FROM auto1 SET sem='$batch_update' WHERE batch='$batch' AND course='$course'";
+    $query_run=mysqli_query($conn,$query);
+
+    if($query_run){
+        echo "<script> alert('Updated Successfully!);</script>";
+        header("Location: testadmin.php");
+    }
+    else{
+        echo "<script> alert('Records not updated!);</script>";
+        header("Location: testadmin.php"); 
+    }
+
+
+
+?>

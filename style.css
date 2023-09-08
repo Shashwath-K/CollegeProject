@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(to top, rgb(116, 194, 217),rgb(49, 182, 37));
+    background-attachment: fixed;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+section{
+    width:80vw;
+    margin: 5% auto;
+    padding-top: 40;
+    text-align: center;
+    line-height: 25px;
+}
+h1{
+    margin-bottom: 2vh;
+}
+.clg-logo img{
+    width:15vw;
+    margin-left: 43%;
+    margin-right: 43%;
+}
+.navbar{
+justify-content: space-between;
+border-bottom: solid 4px yellowgreen;
+box-shadow: 2px 2px 35px 2px rgb(3, 61, 3);
+background-color:rgb(209, 251, 73),rgb(129, 255, 3);
+padding: 12px 28px;
+align-items: center;
+}
+.navbar .menu-li li{
+display: inline-block;
+}
+.navbar ul{
+list-style: none;
+display: grid;
+gap:1%;
+text-align: center;
+padding: 2% 1%;
+margin-left:5%;
+margin-right:2%;
+grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+.navbar .menu-li a{
+
+text-decoration: none;
+color:white;
+width: 100%;
+padding:4%;
+border:5px solid rgba(0, 0, 0, 0.1);
+text-align: center;
+-webkit-transition: 0.6s ease; 
+
+}
+.navbar .menu-li li a:hover{
+border: 5px solid greenyellow;
+width: 100%;
+padding: 4%;
+transition: 0.6s ease;
+background: rgb(23, 110, 4);
+color: aliceblue;
+}

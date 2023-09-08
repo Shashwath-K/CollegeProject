@@ -1,0 +1,137 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="regstyle.css">
+    <script type="text/javascript" src="sturegscript.js"></script>
+</head>
+<body>
+    
+    <nav class="navbar">
+        
+    </nav>
+    <section>
+        <h1>Registration</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis deleniti labore ipsam assumenda nemo ipsum repellendus similique ad iure ipsa aut iusto quisquam quibusdam ex, dolore, veniam harum. Magnam, modi.</p>
+    </section>
+	<form action="http://localhost/server/perinfo.php" method="POST" enctype="multipart/form-data">
+	<div align="center" class="form">
+	<div class="border-form">	
+	<div class="form2">
+		<div class="form21">
+	Name:
+	<input type="text" name="nm"/>
+    Course:
+		<select id="course1" class="dmen1" name="drop-dwn-menu1">
+			<option value="" selected disabled hidden>Choose here</option>
+			<option value="CS">CS&Engg</option>
+			<option value="ME">Mechanical</option>
+			<option value="CV">Civil</option>
+			<option value="AT">AutoMobile</option>
+			<option value="EC">Electronics&Communication</option>
+			<option value="EE">Electrical&Electronics</option>
+		</select><br/>
+	SEM:<br/>
+	<select  id="course2" class="dmen1" name="drop-dwn-menu2">
+		<option value="" selected disabled hidden>Choose here</option>
+		<option value="first">I</option>
+		<option value="second">II</option>
+		<option value="third">III</option>
+		<option value="fourth">IV</option>
+		<option value="fifth">V</option>
+		<option value="sixth">VI</option>
+	</select><br/>
+	Parent's Phone-no:
+	<input type="text" name="parent-contact1">
+	<br/>Academic Year:<select  id="course2" class="dmen1" name="academic_year">
+		<option value="" selected disabled hidden>Choose here</option>
+		<option value="2019">2019</option>
+		<option value="2020">2020</option>
+		<option value="2021">2021</option>
+		<option value="2022">2022</option>
+		<option value="2023">2023</option>
+		<option value="2024">2024</option>
+	</select>
+	</div>
+	<div class="form22">
+	Reg number:
+	<input type="text" name="rgn"/><br/>
+	E-mail:
+	<input type="text" name="email"/>
+	Address:
+	<input type="text" name="address">
+	Parent's Phone-no alt:
+	<input type="text" name="parent-contact2">
+	<br/>
+	Year:<br/><select  id="course2" class="dmen1" name="year_id">
+		<option value="" selected disabled hidden>Choose here</option>
+		<option value="1st">1st year</option>
+		<option value="2nd">2nd year</option>
+		<option value="3rd">3rd year</option>
+	</select><br/>Gender:<br/>
+	<select class="dmen1" name="gender">
+		<option value="" selected disabled hidden>Choose here</option>
+		<option value="Male">Male</option>
+		<option value="Female">Female</option>
+		<option value="Other">Other</option>
+	</select>
+</div>
+	<div class="form23">
+	Phone-no:<br/>
+	<input type="number" name="phn"/><br/>
+	Date of Birth:
+	<input type="date" name="dob">
+	<br/>Residential Address:
+	<input type="text" name="resaddress">
+	<br/>Select Image File to Upload:<br/>
+		<input type="file" name="file">
+	</div></div>
+</div>
+<div class="formpre-reg">
+	<div class="pre-course">
+			<h2>STUDENT QUALIFICATIONS</h2>
+			<b>Previous Course:</b>
+			<select  name="precourse1" id="precourse1" class="dmen1" name="drop-dwn-menu4" onchange="prefill(this.id,'precourse2');">
+				<option value="" selected disabled hidden>Choose here</option>
+				<option value="10th">10th STD</option>
+				<option value="PUC">PUC</option>
+				<option value="other">Other</option>	
+			</select>
+			<b>Exam-Type:</b>
+			<select name="precourse2" id="precourse2" class="dmen1" name="drop-dwn-menu4" onload="prefill();">	
+				<option value="" selected disabled hidden>Choose here</option>
+			</select>
+			<br/>
+			<br/>
+					<table border=2 class="tabst1"id="tableR1"><tr><th>Subjects</th>
+						<th>Marks</th></tr>
+						<tr><td><input type="text" id="c1" name="sub1"/></td>
+							<td><input type="number" name="A"></td></tr>
+						<tr><td><input type="text" id="c2" name="sub2"/></td>
+							<td><input type="number" name="B"></td>
+						</tr>
+							<td><input type="text" id="c3" name="sub3"/>
+							<td><input type="number" name="C"></td></tr>
+						<tr><td><input type="text" id="c4" name="sub4"/></td>
+							<td><input type="number" name="D"></td>
+							</tr>
+						<tr><td><input type="text" id="c5" name="sub5"/></td>
+							<td><input type="number" name="E"></td></tr>
+						<tr><td><input type="text" id="c6" name="sub6"/></td>
+							<td><input type="number" name="F"></td></tr>
+						<tr><td><input type="text" id="c7" name="sub7"/></td>
+							<td><input type="number" name="G"></td></tr>
+						<tr><td><input type="text" id="c8" name="sub8"/></td>
+							<td><input type="number" name="H"></td></tr>
+							<label for="table" value="c1"></td></label>
+							
+					</table>
+					<input type="submit" name="Submit" value="Submit">	   
+				</form>
+	</div>
+    <script src="navscript.js"></script>
+</body>
+</html>

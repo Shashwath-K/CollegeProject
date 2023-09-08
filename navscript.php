@@ -1,0 +1,1 @@
+    <script src="http://localhost/server/navscript.js"></script>
